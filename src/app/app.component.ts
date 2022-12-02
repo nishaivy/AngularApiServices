@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import { UserdataService } from './services/userdata.service'
+import { UserdataService } from './services/userdata.service';
+import {Observable} from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,12 +20,12 @@ export class AppComponent {
 //     this.countryData = data;
 // });
 //}
-userData:any=[];
-constructor(private userdataService:UserdataService){
-  this.userdataService.getUserData().subscribe(data=>{
+// userData:any=[{}];
+// constructor(private userdataService:UserdataService){
+//   this.userdataService.getUserData().subscribe(data=>{
 
-    this.userData=data;
-  })
+//     this.userData=data;
+//   })
 
-}
+//}
 }

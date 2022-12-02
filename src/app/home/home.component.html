@@ -10,12 +10,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let apicall of userData">
+    <tr *ngFor="let apicall of userData.data">
       <td>{{apicall.id}}</td>
-      <td>{{apicall.name}}</td>
-      <td>{{apicall.username}}</td>
+      <td>{{apicall.first_name}}</td>
+      <td>{{apicall.last_name}}</td>
       <td>{{apicall.email}}</td>
-
+      <td><img class="img-fluid img-responsive rounded product-image" src={{apicall.avatar}}> </td>
     </tr>
 
   </tbody>
