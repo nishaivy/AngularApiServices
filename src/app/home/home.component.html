@@ -1,5 +1,5 @@
 
-<table class="table" border="1" >
+<table class="table" style="background-color: green; width:100%; margin:20px" border="1" >
   <thead>
     <tr>
       <th scope="col"> ID </th>
@@ -10,12 +10,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let apicall of userData.data">
-      <td>{{apicall.id}}</td>
-      <td>{{apicall.first_name}}</td>
-      <td>{{apicall.last_name}}</td>
-      <td>{{apicall.email}}</td>
-      <td><img class="img-fluid img-responsive rounded product-image" src={{apicall.avatar}}> </td>
+    <tr  *ngFor="let apicall of userData.data">
+      <td class="data">{{apicall.id}}</td>
+      <td class="data">{{apicall.first_name}}</td>
+      <td class="data">{{apicall.last_name}}</td>
+      <td class="data">{{apicall.email}}</td>
+      <td class="data"><img src={{apicall.avatar}}> </td>
     </tr>
 
   </tbody>
